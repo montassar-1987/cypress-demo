@@ -1,0 +1,13 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "cypress run --browser chrome",
+    "open": "cypress open",
+    "ci": "cypress run --browser chrome --reporter junit --reporter-options mochaFile=cypress/results/results-[hash].xml,toConsole=true"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
